@@ -48,7 +48,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "vzhukovs/che-theia:next"
+     image: "vzhukovs/che-theia:ci-build"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
