@@ -60,7 +60,7 @@ spec:
    - name: theia-ide
      image: "vzhukovs/che-theia:next"
      env:
-         - name: HTTP_PROXY
+         - name: http_proxy
            value: http://10.0.148.146:3128
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
