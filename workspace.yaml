@@ -5,5 +5,5 @@ components:
   - 
     alias: theia-editor
     reference: >-
-      https://github.com/vzhukovskii/devfiles/raw/master/meta.yaml
+      https://raw.githubusercontent.com/vzhukovskii/devfiles/master/meta.yaml
     type: cheEditor
