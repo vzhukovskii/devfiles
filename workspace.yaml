@@ -7,4 +7,6 @@ components:
     reference: >-
       https://raw.githubusercontent.com/vzhukovskii/devfiles/master/meta.yaml
     type: cheEditor
-
+    env:
+        - name: NODE_TLS_REJECT_UNAUTHORIZED
+          value: 0
