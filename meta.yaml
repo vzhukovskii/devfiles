@@ -58,7 +58,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "docker.io/maxura/che-theia:750"
+     image: "vzhukovs/che-theia:next"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
