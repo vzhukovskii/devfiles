@@ -1,9 +1,7 @@
-apiVersion: 1.0.0
 metadata:
- name: workspace
+  name: workspacen-
 components:
-  - 
+  - type: cheEditor
+    reference: 'https://raw.githubusercontent.com/vzhukovskii/devfiles/master/meta.yaml'
     alias: theia-editor
-    reference: >-
-      https://raw.githubusercontent.com/vzhukovskii/devfiles/master/meta.yaml
-    type: cheEditor
+apiVersion: 1.0.0
