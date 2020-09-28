@@ -22,7 +22,7 @@ spec:
         path: /vnc.html?resize=remote&autoconnect=true&reconnect=true
   containers:
    - name: intellij-novnc
-     image: "quay.io/che-incubator/che-editor-intellij-community:latest"
+     image: "vzhukovs/che-editor-intellij:latest"
      mountSources: true
      volumes:
          - mountPath: "/JetBrains/IdeaIC"
