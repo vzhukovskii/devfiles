@@ -8,8 +8,8 @@ title:  IntelliJ IDEA Community Edition (in browser using noVNC) as editor for E
 description:  IntelliJ IDEA Community Edition running on the Web with noVNC
 icon: https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png
 category: Editor
-repository: https://github.com/benoitf/intellij-editor-vnc/
-firstPublicationDate: "2020-09-07"
+repository: https://github.com/che-incubator/che-editor-intellij-community
+firstPublicationDate: "2020-09-25"
 spec:
   endpoints:
   # hack (use dirigible endpoint name as it is part of liveness probes)
@@ -22,18 +22,14 @@ spec:
         path: /vnc.html?resize=remote&autoconnect=true&reconnect=true
   containers:
    - name: intellij-novnc
-     image: "vzhukovs/che-editor-intellij:latest"
+     image: "quay.io/che-incubator/che-editor-intellij-community:latest"
      mountSources: true
      volumes:
-         - mountPath: "/intellij-config"
-           name: intellij-config     
-     volumes:
-         - mountPath: "/home/user/.local"
-           name: intellij-local
+         - mountPath: "/JetBrains/IdeaIC"
+           name: idea-configuration     
      volumes:
          - mountPath: "/home/user/.java"
-           name: intellij-java
+           name: idea-java
      ports:
          - exposedPort: 8080
      memoryLimit: "2048M"
-     
