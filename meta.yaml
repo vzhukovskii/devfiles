@@ -22,14 +22,11 @@ spec:
         path: /vnc.html?resize=remote&autoconnect=true&reconnect=true
   containers:
    - name: intellij-novnc
-     image: "vzhukovs/che-editor-intellij:latest"
+     image: "vzhukovs/che-editor-intellij-ultimate:latest"
      mountSources: true
      volumes:
          - mountPath: "/JetBrains/IdeaIC"
-           name: idea-configuration     
-     volumes:
-         - mountPath: "/home/user/.java"
-           name: idea-java
+           name: idea-configuration
      ports:
          - exposedPort: 8080
      memoryLimit: "2048M"
